@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:datepicker="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ff343434">
+
+
+    <com.example.loc.lybrarymenu.animation.View.DateRecyclerView
+        android:id="@+id/date_list"
+        android:layout_width="match_parent"
+        android:layout_height="100dp"
+        android:background="#ff343434" />
+
+    <android.support.v4.view.ViewPager
+        android:id="@+id/pager"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" />
+
+</RelativeLayout>

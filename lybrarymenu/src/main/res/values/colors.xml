@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="date_item_unselected_indicator">#ff5c5c5c</color>
+    <color name="date_item_selected_indicator">#01579B</color>
+
+    <color name="date_item_background">#ff373737</color>
+    <color name="date_item_month_name">#ffd5d5d5</color>
+    <color name="date_item_day_name">#ff9a9a9a</color>
+    <color name="date_item_day">#FFFFFFFF</color>
+    <color name="primary">#00BCD4</color>
+    <color name="primary_dark">#0097A7</color>
+    <color name="primary_light">#B2EBF2</color>
+    <color name="accent">#03A9F4</color>
+    <color name="primary_text">#212121</color>
+    <color name="secondary_text">#727272</color>
+    <color name="icons">#FFFFFF</color>
+    <color name="divider">#B6B6B6</color>
+    <color name="color_red_erro">#F44336</color>
+    <color name="textView_color_title">#009688</color>
+    <color name="Checkbox_color_check">#009688</color>
+</resources>

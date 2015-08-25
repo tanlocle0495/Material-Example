@@ -1,0 +1,180 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:materialdesign="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/j"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFF"
+    tools:context="com.example.loc.water_body.Activity.User_Information">
+
+    <include
+        android:id="@+id/mtoolBar"
+        layout="@layout/app_bar" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtuserName"
+        android:layout_width="fill_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_below="@+id/mtoolBar"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="29dp"
+        android:hint="your name"
+        android:padding="6dp"
+        app:met_baseColor="#000"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/color_red_erro"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/accent" />
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtWeight"
+        android:layout_width="260dp"
+        android:layout_height="80dp"
+        android:layout_alignLeft="@+id/edtuserName"
+        android:layout_alignStart="@+id/edtuserName"
+        android:layout_below="@+id/edtuserName"
+        android:hint="Your weight"
+        android:padding="6dp"
+        android:inputType="numberDecimal"
+        app:met_baseColor="#000"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/color_red_erro"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/accent" />
+
+    <RadioGroup
+        android:id="@+id/radioGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/edtWeight"
+        android:layout_marginLeft="8dp"
+        android:layout_toEndOf="@+id/edtWeight"
+        android:layout_toRightOf="@+id/edtWeight">
+
+        <RadioButton
+            android:id="@+id/radiakg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="8dp"
+            android:checked="true"
+            android:text="kg" />
+
+        <RadioButton
+            android:id="@+id/radiaolbs"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="false"
+            android:text="lbs" />
+    </RadioGroup>
+
+    <com.gc.materialdesign.views.CheckBox
+        android:id="@+id/checkSunny"
+
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/textView2"
+        android:layout_toStartOf="@+id/textView2"
+        android:background="@color/Checkbox_color_check"
+        materialdesign:check="false" />
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:text="Sunny"
+        android:textSize="15dp" />
+
+    <com.gc.materialdesign.views.CheckBox
+        android:id="@+id/checkSport"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/r"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:background="@color/Checkbox_color_check"
+        materialdesign:check="false" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignEnd="@+id/radioGroup"
+        android:layout_alignRight="@+id/radioGroup"
+        android:layout_alignTop="@+id/textView2"
+        android:text="Sport"
+        android:textSize="15dp" />
+
+    <View
+        android:id="@+id/r"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_below="@+id/checkSunny"
+        android:layout_marginLeft="16dp"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="16dp"
+        android:background="#EEE" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/checkSunny"
+        android:layout_alignStart="@+id/checkSunny"
+        android:layout_alignTop="@+id/r"
+        android:layout_marginTop="16dp"
+        android:text="Your Water"
+        android:textAppearance="?android:attr/textAppearanceLarge"
+        android:textColor="@color/accent"
+        android:textSize="30dp" />
+
+
+    <com.rengwuxian.materialedittext.MaterialEditText
+        android:id="@+id/edtWater"
+        android:layout_width="210dp"
+        android:layout_height="72dp"
+        android:layout_below="@+id/textView4"
+        android:layout_marginRight="5dp"
+        android:layout_toLeftOf="@+id/textView3"
+        android:layout_toStartOf="@+id/textView3"
+        android:padding="6dp"
+        android:textSize="25dp"
+        android:gravity="right"
+        app:met_baseColor="#000"
+        app:met_clearButton="true"
+        app:met_errorColor="@color/color_red_erro"
+        app:met_floatingLabel="highlight"
+        app:met_primaryColor="@color/accent" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignTop="@+id/edtWater"
+        android:layout_marginRight="16dp"
+        android:layout_marginTop="30dp"
+        android:text="ml"
+        android:textAppearance="?android:attr/textAppearanceMedium"
+        android:textSize="25dp" />
+
+    <Button
+        android:id="@+id/btnUserLoginDone"
+        android:layout_marginBottom="16dp"
+        style="@style/FlatButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:text="DONE" />
+
+
+</RelativeLayout>
